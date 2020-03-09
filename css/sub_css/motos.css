@@ -1,0 +1,130 @@
+@font-face{
+    font-family: letra;
+    src:url(../letra/Rightland.otf);
+}
+body{
+    margin: 0px;
+    font-size: 18px;
+    /*background-color: #B5B5B3;*/
+    background-image: url(../../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: letra;
+    color: white;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    left: 37%;
+    font-size: 50px;
+    color: white;
+}
+.nombres{
+    position: absolute;
+    top: 20px;
+    left: 1%;
+    padding-left: 1%;
+    color: black;
+}
+.logo{
+    width: 160px;
+    height: 60px;
+}
+.marcas{
+    margin-top: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+.marcas img{
+    width: 320px;
+    height: 180px;
+}
+.uno{
+    padding-bottom: 100px;
+    padding-left:5px;
+}
+.dos{
+    margin-top: 50px;
+    padding-bottom: 100px;
+    padding-left:5px;
+}
+.tres{
+    margin-top: 50px;
+    padding-bottom: 100px;
+    padding-left:5px;
+}
+.unofoto{
+    float: left;
+    border-radius: 25px;
+    box-shadow: 10px 10px 90px wheat;
+}
+.dosfoto{
+    float: right;
+    border-radius: 25px;
+    box-shadow: 10px 10px 90px wheat;
+}
+.tresfoto{
+    float: left;
+    border-radius: 25px;
+    box-shadow: 10px 10px 90px wheat;
+}
+.textouno{
+    margin-top: 2%;
+    margin-left: 370px;
+    font-size:30px;
+    text-align: center;
+}
+.textodos{
+    margin-top: 2%;
+    margin-left: 320px;
+    font-size:30px;
+    text-align: center;
+}
+.textotres{
+    margin-top: 2%;
+    margin-left: 370px;
+    font-size:30px;
+    text-align: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.atras{
+    margin-left: 40px;
+    text-decoration: underline;
+    color: blue;
+}
+.footer{
+    background-color: black;
+}
+.tablafooter{
+    margin: 0 auto; 
+    border:none;
+}
+.imgth{
+    height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 130px; 
+    min-width: 15px; 
+    min-height: 13px; 
+    display: block; 
+    overflow-x: auto;
+}
+.td{
+    border:none;
+}
+.pfooter{
+    text-align: center; 
+    padding: 0px 0px 0px 0px; 
+    font-size: 20px; 
+    color: #fff;
+}
+.madre {
+  border-collapse: separate;
+  border-spacing: 30px 2px;
+}
