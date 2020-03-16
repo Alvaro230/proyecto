@@ -1,93 +1,76 @@
-@font-face{
-    font-family: letra;
-    src:url(../letra/Rightland.otf);
-}
 body{
     margin: 0px;
     font-size: 18px;
-    /*background-color: #B5B5B3;*/
     background-image: url(../../img/fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     background-attachment: fixed;
-    font-family: letra;
     color: white;
 }
 h1{
-    position: absolute;
     top: 20px;
     left: 37%;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
+    text-align: center;
 }
 .nombres{
     position: absolute;
     top: 20px;
     left: 1%;
     padding-left: 1%;
-    color: black;
 }
 .logo{
     width: 160px;
     height: 60px;
 }
-.marcas{
-    margin-top: 200px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: center;
+.fotos{
+	font-family: verdana;
 }
-.marcas img{
-    width: 320px;
-    height: 180px;
+.imagenes{
+	display:flex;
+	width: 95%;
+	margin:auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius: 3px;
 }
-.uno{
-    padding-bottom: 100px;
-    padding-left:5px;
+.imagenes .fotaca{
+	width: 32%;
+	position: relative;
+	height: 250px;
+	margin-bottom: 20px;
+    margin-right: 10px;
+	box-shadow: 10px 5px 30px 0px white;
 }
-.dos{
-    margin-top: 50px;
-    padding-bottom: 100px;
-    padding-left:5px;
+.fotaca img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
-.tres{
-    margin-top: 50px;
-    padding-bottom: 100px;
-    padding-left:5px;
+.overlay{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	background: rgba(0, 118, 192, 0.781);
+	width: 100%;
+	height: 0px;
+	overflow:hidden;
+	transition: 0.5s ease;
 }
-.unofoto{
-    float: left;
-    border-radius: 25px;
-    box-shadow: 10px 10px 90px wheat;
+.overlay .ojala{
+	color:#fff;
+	font-weight: 300px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	text-align: left;
+	transform: translate(-70%, -50%);
 }
-.dosfoto{
-    float: right;
-    border-radius: 25px;
-    box-shadow: 10px 10px 90px wheat;
-}
-.tresfoto{
-    float: left;
-    border-radius: 25px;
-    box-shadow: 10px 10px 90px wheat;
-}
-.textouno{
-    margin-top: 2%;
-    margin-left: 370px;
-    font-size:30px;
-    text-align: center;
-}
-.textodos{
-    margin-top: 2%;
-    margin-left: 320px;
-    font-size:30px;
-    text-align: center;
-}
-.textotres{
-    margin-top: 2%;
-    margin-left: 370px;
-    font-size:30px;
-    text-align: center;
+.fotaca:hover .overlay{
+	height: 100%;
+	cursor:pointer;
 }
 a{
     color: black;
@@ -123,8 +106,4 @@ a{
     padding: 0px 0px 0px 0px; 
     font-size: 20px; 
     color: #fff;
-}
-.madre {
-  border-collapse: separate;
-  border-spacing: 30px 2px;
 }
