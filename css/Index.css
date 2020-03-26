@@ -2,6 +2,19 @@
     font-family: letra;
     src:url(../letra/Rightland.otf);
 }
+@keyframes cambio{
+    0%{margin-left:0;}
+    25%{margin-left:0;}
+    
+    30%{margin-left:-100%;}
+    50%{margin-left:-100%;}
+    
+    55%{margin-left:-200%;}
+    75%{margin-left:-200%;}
+    
+    80%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
 body{
     margin: 0px;
     font-size: 18px;
@@ -30,7 +43,7 @@ nav:hover{
 ul{
     margin: 20px;
 }
-li{
+nav li{
     float: right;
     width: 21%;
     color: black;
@@ -40,7 +53,7 @@ li{
     text-align: center;
     font-size: 25px;
 }
-li:hover{
+nav li:hover{
     margin-top: 10px;
 }
 .fotele{
@@ -65,34 +78,24 @@ li:hover{
     height: 30%;
 }
 .container{
-    display: inline-block;
-    text-align: center;
     width: 100%;
-    height: 90%;
+    height: 650px;
+    overflow: hidden;
 }
- 
-.titulo{
-    position: absolute;
-    top: 80px;
-    left: 37%;
-    font-size: 40px;
-    color: #333;
+.slider{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
 }
-/*.nombres{
-    position: absolute;
-    top: 80px;
-    left: 1%;
-    padding-left: 1%;
-    font-size: 20px;
-    color: black;
-}*/
-.luis{
+.slider li{
     width: 100%;
-    height: 90%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 650px;
 }
 h2{
     text-align: center;
@@ -129,67 +132,14 @@ img{
 }
 .mapa{
     margin: 30px;
-    float: left;
 }
 .pmapa{
     margin-left: 400px;
-    margin-right: 500px;
     font-size: 20px;
 }
 .icon{
     width: 25px;
     height: 25px;
-}
-.slidermapa{
-    margin-left: 65%;
-    margin-top: -350px;
-}
-.slider{
-    width: 450px;
-    height: 300px;
-    position: relative;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    box-shadow: 10px 10px 10px black;
-    border-radius: 10px;
-    
-    justify-content: center;
-    align-items: flex-end;
-}
-.slider img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    border-radius: 10px;
-}
-.slider input[name="sradio"]{
-    display: none;
-}
-/*esto es para que seleccione al "hermano" es decir que seleccione al input checked y coja la img cercana y le de una opacidad*/
-.slider input[name="sradio"]:checked ~ img{
-    opacity: 1;
-}
-.slider input[name="sradio"]+ label{
-    position: relative;
-    z-index: 50;
-    margin-left: 50px;
-    margin-bottom: 5px;
-    padding: -20px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: white;
-    border: 2px solid black;
-    cursor: pointer;
-}
-.slider input[name="sradio"]:checked + label{
-    background: #16b2eb;
-    border: 2px solid white;
 }
 iframe{
     float: left;
