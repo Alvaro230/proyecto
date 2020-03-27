@@ -90,7 +90,7 @@ h1{
     height: 250px;
 }
 .ford{
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     padding-left:5px;
 }
 .mercedes{
@@ -105,7 +105,7 @@ h1{
 }
 .iveco{
     margin-top: 10px;
-    padding-bottom: 130px;
+    padding-bottom: 160px;
     padding-left:5px;
 }
 .fordfoto{
@@ -130,19 +130,27 @@ h1{
 }
 .textoford{
     margin-top: 5%;
-    margin-left: 370px;
+    margin-left: 395px;
+    margin-right: 250px;
+    font-family: cuerpo;
 }
 .textomercedes{
     margin-top: 5%;
-    margin-right: 370px;
+    margin-left: 210px;
+    margin-right: 390px;
+    font-family: cuerpo;
 }
 .textohyundai{
     margin-top: 5%;
     margin-left: 370px;
+    margin-right: 250px;
+    font-family: cuerpo;
 }
 .textoiveco{
-    margin-top: 5%;
+    margin-top: 8%;
+    margin-left: 210px;
     margin-right: 370px;
+    font-family: cuerpo;
 }
 a{
     color: white;
