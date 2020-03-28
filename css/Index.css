@@ -173,6 +173,7 @@ iframe{
     height: 35px;
     padding-top: 10px;
 }
+/* esto sirve para manejar los imput que tenga el tipo que se muestra dentro de los []*/
 input[type="text"],
 input[type="password"],
 input[type="mail"] {
