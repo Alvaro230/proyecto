@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <script type="application/javascript" src="pag/jsformulario.js"></script>
      <link rel="stylesheet" type="text/css" href="css/Index.css">
     <link rel="icon" href="icon/logo.png" type="image/png" sizes="16x20">
     <title>WomanRent</title>
@@ -14,7 +15,6 @@
                 <li class="tres"><div class="foto"><a href="#con" ><img class="fotele" src="icon/gmail.png"/></a></div>Contacto</li>
                 <li class="dos"><div class="foto"><a href="#sn" ><img class="fotele" src="icon/contactos.png"/></a></div>Sobre nosotros</li>
                 <li class="uno"><div class="foto"><a href="#cat" ><img class="fotele" src="icon/categorias.png"/></a></div>Categorias</li>
-                <!--<li class="uno"><div class="foto"><img class="fotele" src="icons/cont.png"/></div></li>-->
                 <img class="logo" src="icon/logo.png"/>
             </ul>
         </nav>
@@ -43,33 +43,74 @@
                 <hr><p><img class="icon" src="icon/facebook.png"/>&nbsp; LuxuryRent</p>
                 <hr><p><img class="icon" src="icon/insta.png"/>&nbsp; Luxury_Rent</p>
             </div>
-            <!--<div class="slidermapa">
-                <ul class="slider">
-                    <li>
-                        <input type="radio" id="sbutton1" name="sradio" checked><!--para que siempre aparezca este primero
-                        <label for="sbutton1"></label>
-                        <img src="img/bmw.jpg"/>
-                    </li> 
-                    <li>
-                        <input type="radio" id="sbutton2" name="sradio">
-                        <label for="sbutton2"></label>
-                        <img src="img/mercedes.jpg"/>
-                    </li> 
-                    <li>
-                        <input type="radio" id="sbutton3" name="sradio">
-                        <label for="sbutton3"></label>
-                        <img src="img/porsche.jpg"/>
-                    </li> 
-                    <li>
-                        <input type="radio" id="sbutton4" name="sradio">
-                        <label for="sbutton4"></label>
-                        <img src="img/audi.jpg"/>
-                    </li>
-                </ul>
-            </div>-->
         </div>
     <h2 id="con">Contacto</h2>
-    <p class="sergio">El término automóvil (del griego αὐτο "uno mismo", y del latín mobĭlis "que se mueve") se utiliza por antonomasia para referirse a los automóviles de turismo.En una definición más genérica, se refiere a un vehículo autopropulsado destinado al transporte de personas o mercancías sin necesidad de carriles.Existen diferentes tipos de automóviles, como camiones, autobuses,furgonetas,motocicletas,motocarros o cuatriciclos.</p>
+    <form action="validar.php" onsubmit="return validar();" class="formulario">
+        <h1 class="h1">Reserve ahora</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <img class="iconFormulario" src="icon/usuario.png" />
+                <input type="text" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="input-contenedor">
+                <img class="iconFormulario" src="icon/usuario.png" />
+                <input type="text" id="apellido" placeholder="Apellidos">
+            </div>
+            <div class="input-contenedor">
+                <img class="iconFormulario" src="icon/mail.png" />
+                <input type="mail" id="mail" placeholder="Correo Electrónico">
+            </div>
+            <div class="input-contenedor">
+                <img class="iconFormulario" src="icon/telefono.png" />
+                <input type="text" id="tlf" placeholder="Tlf. de contacto">
+            </div>
+            <h2 class="h2">Elija su vehículo</h2>
+            <div class="editar-select" style="width:235px; margin:0 auto;">
+                <select>
+                    <option selected disabled>Seleccione Vehiculo </option>
+                    <option value="1">-- Coche --</option>
+                    <option value="2">** Moto **</option>
+                    <option value="3">== Furgoneta ==</option>
+                </select>
+            </div>
+            <br>
+            <div class="editar-select" style="width:235px; margin:0 auto;">
+                <select>
+                    <option selected disabled> Seleccione Marca </option>
+                    <option selected disabled>-- Coches -- </option>
+                    <option value="1">-- Mercedes --</option>
+                    <option value="2">-- BMW --</option>
+                    <option value="3">-- Audi --</option>
+                    <option value="3">-- Porsche --</option>
+                    <option selected disabled>** Motos ** </option>
+                    <option value="1">** KTM **</option>
+                    <option value="2">** Ducati **</option>
+                    <option value="3">** Kawasaki **</option>
+                    <option value="3">** Suzuki **</option>
+                    <option selected disabled>== Furgoneta == </option>
+                    <option value="1">== Iveco ==</option>
+                    <option value="2">== Ford ==</option>
+                    <option value="3">== Mercedes ==</option>
+                    <option value="3">== Hyundai ==</option>
+                </select>
+            </div>
+            <br>
+            <h3 class="h3">Indique modelo y especificaciones :</h3>
+            <textarea>
+                    </textarea>
+            <br>
+            <br>
+            <div class="check-box">
+                <input type="checkbox"> Deseo recibir ofertas exclusivas de LuxuryRent.
+                <br>
+                <input type="checkbox" required> Acepto los términos y condiciones.
+            </div>
+            <br>
+            <br>
+            <input type="submit" value="Enviar petición" class="button">
+            <p class="p">¿No tiene una cuenta? <a class="link" href="registro.html">Registrate aquí</a></p>
+        </div>
+    </form>
    <footer class="footer">
        <table class="tablafooter">
            <tr>
